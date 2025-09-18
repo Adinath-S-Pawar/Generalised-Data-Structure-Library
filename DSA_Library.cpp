@@ -25,9 +25,15 @@ class QueueX
 
     public:
         QueueX();
-        void Enqueue(T no);
+
+        void Enqueue(
+                        T no
+                    );
+
         T Dequeue();
+
         void Display();
+
         int Count();
 };
 
@@ -193,9 +199,15 @@ class StackX
 
     public:
         StackX();
-        void Push(T no);
+
+        void Push(
+                    T no
+                );
+
         T Pop();
+
         void Display();
+
         int Count();
 };
 
@@ -355,14 +367,31 @@ class SinglyCll
 
     public:
         SinglyCll();
-        void InsertFirst(T no);
-        void InsertLast(T no);
+
+        void InsertFirst(
+                            T no
+                        );
+
+        void InsertLast(
+                            T no
+                        );
+
         void DeleteFirst();
+
         void DeleteLast();
+
         void Display();
+
         int Count();
-        void DeleteAtPos(int pos);
-        void InsertAtPos(T no,int pos);
+
+        void DeleteAtPos(
+                            int pos
+                        );
+
+        void InsertAtPos(
+                            T no,
+                            int pos
+                        );
         
 };
 
@@ -724,15 +753,29 @@ class DoublyCLL
         DoublyCLL();
 
         void Display();
+
         int Count();
 
-        void InsertFirst(T);
-        void InsertLast(T);
-        void InsertAtPos(T,int);
+        void InsertFirst(
+                            T
+                        );
+
+        void InsertLast(
+                            T
+                        );
+
+        void InsertAtPos(
+                            T,
+                            int
+                        );
 
         void DeleteFirst();
+
         void DeleteLast();
-        void DeleteAtPos(int);
+
+        void DeleteAtPos(
+                            int
+                        );
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -1106,15 +1149,30 @@ class SinglyLL
 
     public:
         SinglyLL();
-        void InsertFirst(T no);
-        void InsertLast(T no);
-        void InsertAtPos(T no,int pos);
+
+        void InsertFirst(
+                            T no
+                        );
+
+        void InsertLast(
+                            T no
+                        );
+
+        void InsertAtPos(
+                            T no,
+                            int pos
+                        );
 
         void DeleteFirst();
+
         void DeleteLast();
-        void DeleteAtPos(int pos);
+
+        void DeleteAtPos(
+                            int pos
+                        );
 
         void Display();
+
         int Count();
 
 };
@@ -1477,15 +1535,30 @@ class DoublyLL
 
     public:
         DoublyLL();
-        void InsertFirst(T no);
-        void InsertLast(T no);
-        void InsertAtPos(T no,int pos);
+
+        void InsertFirst(
+                            T no
+                        );
+
+        void InsertLast(
+                            T no
+                        );
+
+        void InsertAtPos(
+                            T no,
+                            int pos
+                        );
 
         void DeleteFirst();
+
         void DeleteLast();
-        void DeleteAtPos(int pos);
+
+        void DeleteAtPos(
+                            int pos
+                        );
 
         void Display();
+
         int Count();
 
 };
@@ -1855,19 +1928,47 @@ class BST
 
     public:
         BST();
-        void Insert(T );
+
+        void Insert(
+                        T 
+                    );
+
         void Inorder();
-        void InorderHelper(BSTnode<T> *);
+
+        void InorderHelper(
+                                BSTnode<T> *
+                           );
+
         void Preorder();
-        void PreorderHelper(BSTnode<T> *);
+
+        void PreorderHelper(
+                             BSTnode<T> *
+                            );
+
         void Postorder();
-        void PostorderHelper(BSTnode<T> *);
-        bool Search(T );
+
+        void PostorderHelper(
+                                BSTnode<T> *
+                            );
+
+        bool Search(
+                        T 
+                    );
+
         int Count();
+
         int CountLeafNodes();
-        void CountLeafNodesHelper(BSTnode<T> *, int&);
+
+        void CountLeafNodesHelper(
+                                    BSTnode<T> *,
+                                    int&
+                                );
         int CountParentNodes();
-        void CountParentNodesHelper(BSTnode<T> *, int&);
+
+        void CountParentNodesHelper(
+                                        BSTnode<T> *,
+                                        int&
+                                    );
 
 };
 
@@ -2218,13 +2319,22 @@ class ArrayXSort
         bool Sorted;   
         
     public:
-        ArrayXSort(int no);
+        ArrayXSort(
+                        int no
+                    );
+
         ~ArrayXSort();
+
         void Accept();
+
         void Display();
+
         void BubbleSort();
+
         void BubbleSortEfficient();
+
         void SelectionSort();
+
         void InsertionSort();
        
 };
@@ -2496,14 +2606,32 @@ class ArrayX
         bool Sorted;   
 
     public:
-        ArrayX(int no);
+        ArrayX(
+                    int no
+                );
+
         ~ArrayX();
+
         void Accept();
+
         void Display();
-        bool LinearSearch(T no);       
-        bool BiDirectionalSearch(T no);       
-        bool BinarySearchInc(T no);
-        bool BinarySearchEfficientInc(T no);
+
+        bool LinearSearch(
+                            T no
+                        );       
+
+        bool BiDirectionalSearch(
+                                    T no
+                                );       
+
+        bool BinarySearchInc(
+                                T no
+                            );
+
+        bool BinarySearchEfficientInc(
+                                            T no
+                                    );
+
         bool CheckSortedInc();
        
 };
